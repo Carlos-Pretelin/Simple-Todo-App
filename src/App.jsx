@@ -15,7 +15,9 @@ import Todo from './Todo';
             return todo
         })
     case ACTIONS.DELETE_TODO: 
-        return todos.filter( todo => { todo.id !== action.payload.id })
+        return todos.filter( todo =>  todo.id !== action.payload.id )
+    default:
+        return todos
    }
   }
 
