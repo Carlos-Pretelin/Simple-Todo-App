@@ -1,9 +1,10 @@
 import React from "react";
-import { ACTIONS } from './App.jsx'
+import { ACTIONS } from './App.jsx';
+import './styles/Todo.scss';
 
 function Todo({ todo, dispatch }){
     return(
-        <div>
+        <div className="todo-container">
             <span style={ {color: todo.complete ? '#AAA' :'#000'}}>
                 {todo.name}
             </span>

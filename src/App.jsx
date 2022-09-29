@@ -1,5 +1,6 @@
 import React, { useReducer, useState } from 'react';
 import Todo from './Todo';
+import '../src/styles/App.scss'
 
  function reducer(todos, action){
    switch(action.type){
@@ -46,12 +47,19 @@ export function App() {
  console.log(todos);
   return (
     <div className='App'>
-      <form onSubmit={handleSumbit}>
-        <input type="text" value={name} onChange={e => setName (e.target.value)} />
-      </form>
-      {todos.map( todo => {
-       return <Todo key={todo.id} todo={todo} dispatch={dispatch}/>
-      })}
+      <div className='wrapper'>
+        <form
+        className='todo-form' 
+        onSubmit={handleSumbit}>
+          <input type="text" value={name} onChange={e => setName (e.target.value)} />
+        </form>
+        <div className='todo-wrapper'>
+          {todos.map( todo => {
+          return <Todo key={todo.id} todo={todo} dispatch={dispatch}/>
+          })}
+        </div>
+
+        </div>
       
     </div>
   );
