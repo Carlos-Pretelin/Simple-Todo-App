@@ -1,8 +1,30 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 
 .todo-container{
+    
     display: flex;
     justify-content: space-between;
-    width: inherit;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 56px;
+    background-color: #4a69f3;
+    border-radius: 10px;
+    padding: 4px 9px;
     
+}
+
+.todo-buttons{
+    margin: 0 10px;
+}
+
+.todo-buttons button    {
+    font-family: 'Quicksand', sans-serif;
+    font-size: .9rem;
+    margin: 0 10px;
+    border-radius: 4px;
+    color: black;
+    background-color: #8968FB;
+    border: none;
+    padding: 10px;
 }

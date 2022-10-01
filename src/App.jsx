@@ -48,6 +48,13 @@ export function App() {
   return (
     <div className='App'>
       <div className='wrapper'>
+        <div className='instructions'>
+
+          <h1>Simple React To-do list</h1>
+
+          <p>Write your tasks in the box below and press Enter to create a To-do</p>
+
+        </div>
         <form
         className='todo-form' 
         onSubmit={handleSumbit}>
